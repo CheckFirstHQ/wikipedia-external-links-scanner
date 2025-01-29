@@ -9,9 +9,7 @@ A **streaming Python script** that searches multiple Wikipedia language editions
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Notes and Limitations](#notes-and-limitations)
-- [Licence](#licence)
 
 ## Overview
 
@@ -88,3 +86,11 @@ Where `wiki_search.py` is the script that:
 - results_with_user.csv
 - user_info_all.csv
 - user_contributions_all.csv
+
+
+## Notes and Limitations
+
+- **Wikipedia API Limits**: Be mindful of query limits and rate limits. If you experience slow responses or issues, reduce MAX_WORKERS and/or add time.sleep() calls.
+- **Disk-based Deduplication**: The script relies on sort and uniq commands. On Windows, you might need Git Bash or WSL installed, or adapt the script to use SQLite or a Python-based approach.
+- **Data Volume**: If you expect millions of results, ensure sufficient disk space. Streaming helps mitigate memory usage, but large outputs can still grow quickly on disk.
+- **User Info & Contributions**: The script fetches only up to USER_CONTRIB_LIMIT (default 10) contributions per user. Adjust if needed.
