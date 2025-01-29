@@ -58,8 +58,8 @@ This **streaming approach** minimises memory usage by writing data to CSV as soo
 	```
 
 3. Prepare your input CSVs inside the sources/ directory:
-- domains.csv: a list of domains to search (e.g. example.com, one per line).
-- wiki_versions.csv: a list of all Wikipedia language codes, with columns Wikipedia Name and Language Code.
+- `domains.csv`: a list of domains to search (e.g. example.com, one per line).
+- `wiki_versions.csv`: a list of all Wikipedia language codes, with columns Wikipedia Name and Language Code.
    
 ## Usage
    
@@ -83,9 +83,9 @@ Where `wiki_search.py` is the script that:
 
 3. Check the output CSVs:
 
-- results_with_user.csv
-- user_info_all.csv
-- user_contributions_all.csv
+- `results.csv`
+- `user_info_all.csv`
+- `user_contributions_all.csv`
 
 
 ## Notes and Limitations
