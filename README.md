@@ -47,7 +47,7 @@ This **streaming approach** minimises memory usage by writing data to CSV as soo
 1. **Clone** this repository:
 
    ```bash
-   git clone https://github.com/yourusername/wikipedia-external-links-scanner.git
+   git clone https://github.com/CheckFirstHQ/wikipedia-external-links-scanner.git
    cd wikipedia-external-links-scanner
    ```
    
